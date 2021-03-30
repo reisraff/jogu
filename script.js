@@ -19,24 +19,25 @@ function mark(event) {
 		toggleOption();
 	}
 }
+
+function gameOver(){
+
+	var a1 = document.getElementyById("a1").getEvent("posso mudar");
+	var a2 = document.getElementyById("a2").getEvent("posso mudar");
+	var a3 = document.getElementyById("a3").getEvent("posso mudar");
+
+	var b1 = document.getElementyById("b1").getEvent("posso mudar");
+	var b2 = document.getElementyById("b2").getEvent("posso mudar");
+	var b3 = document.getElementyById("b3").getEvent("posso mudar");
+
+	var c1 = document.getElementyById("c1").getEvent("posso mudar");
+	var c2 = document.getElementyById("c2").getEvent("posso mudar");
+	var c3 = document.getElementyById("c3").getEvent("posso mudar");
+
 if (winner != "") {
 	gameOver = true
 	alert("O gahador foi o:'" + winner + "")
 }
-
-function gameOver(){
-
-	var a1 = document.getElementyById("a1").getTarget("posso mudar");
-	var a2 = document.getElementyById("a2").getTarget("posso mudar");
-	var a3 = document.getElementyById("a3").getTarget("posso mudar");
-
-	var b1 = document.getElementyById("b1").getTarget("posso mudar");
-	var b2 = document.getElementyById("b2").getTarget("posso mudar");
-	var b3 = document.getElementyById("b3").getTarget("posso mudar");
-
-	var c1 = document.getElementyById("c1").getTarget("posso mudar");
-	var c2 = document.getElementyById("c2").getTarget("posso mudar");
-	var c3 = document.getElementyById("c3").getTarget("posso mudar");
 
 	var winner = "";
 
