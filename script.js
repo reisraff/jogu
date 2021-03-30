@@ -34,12 +34,10 @@ function gameOver(){
 	var c2 = document.getElementyById("c2").getEvent("posso mudar");
 	var c3 = document.getElementyById("c3").getEvent("posso mudar");
 
-if (winner != "") {
-	gameOver = true
-	alert("O gahador foi o:'" + winner + "")
-}
+console.log("target")
 
 	var winner = "";
+
 
 	if((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 && a1 == a3 && a1 != "") || (a1 == b2 && a1 == c3 && a1 != ""))
     winner = a1;
@@ -50,9 +48,10 @@ if (winner != "") {
 	else if((c3 == c2 && c3 == c1 && c3 != "") || (c3 == a3 && c3 == b3 && c3 != "")) 
 
 	winner = c3;
-}
 
-/*if (winner != "") {
+if (winner != "") {
 	gameOver = true
 	alert("O gahador foi o:'" + winner + "")
-}/*
+}
+
+}
