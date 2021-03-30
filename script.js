@@ -1,14 +1,13 @@
 var option = "X"
 
-function toggleOption(){
-	if (option == "X"){
-		option = "O"
+function toggleOption() {
+	if (option == "X") {
+		option = "O";
 		return;
 	}
-	option = "X"
+
+	option = "X";
 }
-
-
 
 function mark(event) {
 	var target = event.target;
@@ -17,27 +16,22 @@ function mark(event) {
 		console.log("posso mudar");
 		target.textContent = option;
 		toggleOption();
+		checkGameOver();
 	}
 }
 
-function gameOver(){
+function checkGameOver() {
+	var a1 = document.getElementyById("a1").textContent;
+	var a2 = document.getElementyById("a2").textContent;
+	var a3 = document.getElementyById("a3").textContent;
 
-	var a1 = document.getElementyById("a1").getEvent("posso mudar");
-	var a2 = document.getElementyById("a2").getEvent("posso mudar");
-	var a3 = document.getElementyById("a3").getEvent("posso mudar");
+	var b1 = document.getElementyById("b1").textContent;
+	var b2 = document.getElementyById("b2").textContent;
+	var b3 = document.getElementyById("b3").textContent;
 
-	var b1 = document.getElementyById("b1").getEvent("posso mudar");
-	var b2 = document.getElementyById("b2").getEvent("posso mudar");
-	var b3 = document.getElementyById("b3").getEvent("posso mudar");
-
-	var c1 = document.getElementyById("c1").getEvent("posso mudar");
-	var c2 = document.getElementyById("c2").getEvent("posso mudar");
-	var c3 = document.getElementyById("c3").getEvent("posso mudar");
-
-if (winner != "") {
-	gameOver = true
-	alert("O gahador foi o:'" + winner + "")
-}
+	var c1 = document.getElementyById("c1").textContent;
+	var c2 = document.getElementyById("c2").textContent;
+	var c3 = document.getElementyById("c3").textContent;
 
 	var winner = "";
 
@@ -50,9 +44,8 @@ if (winner != "") {
 	else if((c3 == c2 && c3 == c1 && c3 != "") || (c3 == a3 && c3 == b3 && c3 != "")) 
 
 	winner = c3;
-}
 
-/*if (winner != "") {
-	gameOver = true
-	alert("O gahador foi o:'" + winner + "")
-}/*
+	if (winner != "") {
+		alert("O gahador foi o:'" + winner + "")
+	}
+}
