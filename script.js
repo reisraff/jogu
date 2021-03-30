@@ -35,6 +35,7 @@ function checkGameOver() {
 
 	var winner = "";
 
+
 	if((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 && a1 == a3 && a1 != "") || (a1 == b2 && a1 == c3 && a1 != ""))
     winner = a1;
 
