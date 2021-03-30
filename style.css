@@ -1,0 +1,29 @@
+table {
+	width: 100%;
+	min-height: 600px;
+}
+
+table tr {
+	width: 100%;
+	min-height: 600px;
+}
+
+table tr td {
+	width: 33.3%;
+	min-height: 600px;
+}
+
+td {
+	cursor: pointer;
+	text-align: center;
+ 	font-size: 90px;
+}
+
+.h-h {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.w-w {
+	border-bottom: 1px solid #000;
+}
