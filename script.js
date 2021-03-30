@@ -19,20 +19,24 @@ function mark(event) {
 		toggleOption();
 	}
 }
+if (winner != "") {
+	gameOver = true
+	alert("O gahador foi o:'" + winner + "")
+}
 
 function gameOver(){
 
-	var a1 = document.getElementyById("a1").getOption("posso mudar");
-	var a2 = document.getElementyById("a2").getOption("posso mudar");
-	var a3 = document.getElementyById("a3").getOption("posso mudar");
+	var a1 = document.getElementyById("a1").getTarget("posso mudar");
+	var a2 = document.getElementyById("a2").getTarget("posso mudar");
+	var a3 = document.getElementyById("a3").getTarget("posso mudar");
 
-	var b1 = document.getElementyById("b1").getOption("posso mudar");
-	var b2 = document.getElementyById("b2").getOption("posso mudar");
-	var b3 = document.getElementyById("b3").getOption("posso mudar");
+	var b1 = document.getElementyById("b1").getTarget("posso mudar");
+	var b2 = document.getElementyById("b2").getTarget("posso mudar");
+	var b3 = document.getElementyById("b3").getTarget("posso mudar");
 
-	var c1 = document.getElementyById("c1").getOption("posso mudar");
-	var c2 = document.getElementyById("c2").getOption("posso mudar");
-	var c3 = document.getElementyById("c3").getOption("posso mudar");
+	var c1 = document.getElementyById("c1").getTarget("posso mudar");
+	var c2 = document.getElementyById("c2").getTarget("posso mudar");
+	var c3 = document.getElementyById("c3").getTarget("posso mudar");
 
 	var winner = "";
 
@@ -47,7 +51,7 @@ function gameOver(){
 	winner = c3;
 }
 
-if (winner != "") {
+/*if (winner != "") {
 	gameOver = true
 	alert("O gahador foi o:'" + winner + "")
-}
+}/*
