@@ -18,6 +18,7 @@ function mark(event) {
 		toggleOption();
 		checkGameOver();
 	}
+}
   
 async function checkGameOver() {
 	var a1 = document.getElementById("a1").textContent;
